@@ -6,7 +6,7 @@ import prompt
 
 def main():
     name
-    even()
+    print(even())
     n = 0
     while n < 3:
         question = randint(1, 10)

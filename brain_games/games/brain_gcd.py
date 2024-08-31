@@ -6,7 +6,7 @@ import prompt
 
 def br_gcd():
     name
-    gcd()
+    print(gcd())
     n = 0
     while n < 3:
         a = randint(1,10)

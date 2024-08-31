@@ -4,7 +4,7 @@ import prompt
 
 def br_progr():
     name
-    progression()
+    print(progression())
     n = 0
     while n < 3:
         num = []

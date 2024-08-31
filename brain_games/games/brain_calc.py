@@ -5,7 +5,7 @@ import prompt
 
 def main():
     name
-    calc()
+    print(calc())
     n = 0
     while n < 3:
         num1 = randint(1,10)
