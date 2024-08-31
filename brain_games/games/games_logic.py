@@ -19,6 +19,9 @@ def calc():
 def gcd():
     return print("Find the greatest common divisor of given numbers.")
 
+def progression():
+    return print("What number is missing in the progression?")
+
 if __name__ == "__main__":
     welcome
 
