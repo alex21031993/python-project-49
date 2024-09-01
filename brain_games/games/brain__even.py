@@ -1,10 +1,9 @@
-#!/usr/bin/env python3
 from brain_games.games.games_logic import name, even
 from random import randint
 import prompt
 
 
-def main():
+def br_even():
     name
     print(even())
     n = 0
@@ -26,7 +25,3 @@ def main():
             break
     if n == 3:
         print(f'Congratulations, {name}!')
-
-
-if __name__ == "__main__":
-    main()

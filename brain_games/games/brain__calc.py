@@ -3,14 +3,15 @@ from brain_games.games.games_logic import name, calc
 from random import randint, choice
 import prompt
 
-def main():
+
+def br_calc():
     name
     print(calc())
     n = 0
     while n < 3:
-        num1 = randint(1,10)
-        num2 = randint(1,10)
-        choice1 = choice(['+', '-' , '*'])
+        num1 = randint(1, 10)
+        num2 = randint(1, 10)
+        choice1 = choice(['+', '-', '*'])
         expression = f'{num1} {choice1} {num2}'
         question = eval(expression)
         print('Question: ', expression)
@@ -18,15 +19,11 @@ def main():
         if str(answer) == str(question):
             print('Correct!')
             n += 1
-            continue 
-
+            continue
         else:
-            print(f"{answer} is wrong answer ;(. Correct answer was {question}.")
+            print(f"{answer} is wrong answer ;(.")
+            print(f"Correct answer was {question}.")
             print(f"Let's try again, {name}!")
             break
-
     if n == 3:
         print(f'Congratulations, {name}!')
-
-if __name__ == "__main__":
-    main()
