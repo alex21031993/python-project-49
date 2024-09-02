@@ -15,14 +15,14 @@ def br_progr():
         n1 = random.randint(1, 10)
 
         for i in range(num1, num2, n1):
-            num.append(i)
-
+            num.append(str(i))
         choice = random.choice(num)
         x = num.index(choice)
         choice = choicenum.append(choice)
-        num[x] = '..'
-
-        print("Question:", num)
+        num[x] = ".."
+        select = " "
+        numm = select.join(num)
+        print("Question:", numm)
         your_answer = str(prompt.string("Your answer: "))
 
         if your_answer == str(choicenum[0]):
