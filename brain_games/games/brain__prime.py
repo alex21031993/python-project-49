@@ -21,7 +21,7 @@ def br_prime():
             continue
         else:
             print("'yes' is wrong answer ;(. Correct answer was 'no'.")
-            print("Let's try again,", name, "!")
+            print(f"Let's try again, {name}!")
             break
     if n == 3:
         print(f'Congratulations, {name}!')
