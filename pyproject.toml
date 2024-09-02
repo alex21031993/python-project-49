@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
+description = "Brain Games - 5 games for the terminal."
 authors = ["alex21031993 <eliseevalexandr1993@gmail.com>"]
 readme = "README.md"
 packages = [
@@ -13,6 +13,12 @@ packages = [
 python = "^3.12"
 prompt = "^0.4.1"
 
+[tool.poetry.group.dev.dependencies]
+flake8 = "^7.1.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
 brain-games = "brain_games.scripts.br_games:main"
@@ -21,11 +27,3 @@ brain-calc = "brain_games.scripts.brain_calc:main"
 brain-gcd = "brain_games.scripts.braingcd:main"
 brain-progression = "brain_games.scripts.brain_progression:main"
 brain-prime = "brain_games.scripts.brain_prime:main"
-
-
-[tool.poetry.group.dev.dependencies]
-flake8 = "^7.1.1"
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
