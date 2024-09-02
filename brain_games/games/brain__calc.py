@@ -14,7 +14,7 @@ def br_calc():
         choice1 = choice(['+', '-', '*'])
         expression = f'{num1} {choice1} {num2}'
         question = eval(expression)
-        print('Question: ', expression)
+        print('Question:', expression)
         answer = prompt.string("Your answer: ")
         if str(answer) == str(question):
             print('Correct!')

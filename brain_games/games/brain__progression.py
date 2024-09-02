@@ -22,7 +22,7 @@ def br_progr():
         choice = choicenum.append(choice)
         num[x] = '..'
 
-        print("Question: ", num)
+        print("Question:", num)
         your_answer = str(prompt.string("Your answer: "))
 
         if your_answer == str(choicenum[0]):

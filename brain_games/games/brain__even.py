@@ -8,8 +8,8 @@ def br_even():
     print(even())
     n = 0
     while n < 3:
-        question = randint(1, 10)
-        print('Question: ', question)
+        question = randint(1, 100)
+        print('Question:', question)
         answer = prompt.string("Your answer: ")
         if question % 2 == 0 and answer == 'yes':
             print('Correct!')

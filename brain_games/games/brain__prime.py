@@ -9,7 +9,7 @@ def br_prime():
     n = 0
     while n < 3:
         question = random.randint(2, 50)
-        print('Question: ', question)
+        print('Question:', question)
         your_answer = str(prompt.string("Your answer: "))
         k = 0
         for i in range(2, question // 2 + 1):

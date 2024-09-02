@@ -12,7 +12,7 @@ def br_gcd():
     while n < 3:
         a = randint(1, 10)
         b = randint(1, 10)
-        print('Question: ', a, b)
+        print('Question:', a, b)
         your_answer = str(prompt.string("Your answer: "))
         answer = str(math.gcd(a, b))
         if answer == your_answer:
